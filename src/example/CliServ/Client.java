@@ -52,7 +52,7 @@ public class Client extends JFrame implements Runnable {
 
             while(true)
             {
-                connect = new Socket(InetAddress.getByName("126.0.0.1"),5678);
+                connect = new Socket(InetAddress.getByName("127.0.0.1"),5678);
                 output = new ObjectOutputStream(connect.getOutputStream());
                 input = new ObjectInputStream(connect.getInputStream());
 
